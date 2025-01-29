@@ -13,7 +13,7 @@ public class Home extends Sablon implements ActionListener {
 
     public Home() {
         Menu.eliminaActionListeners(0, 3, this);
-        Elemente.panels[0]= Menu.colorare(new ImageIcon("src/Proiect2/Poze/main.png").getImage());
+        Elemente.panels[0]= Menu.colorare(new ImageIcon("MortalKombat-main/Proiect2/Poze/main.png").getImage());
         Elemente.panels[0].setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill=GridBagConstraints.VERTICAL;
