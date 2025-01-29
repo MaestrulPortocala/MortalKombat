@@ -11,7 +11,7 @@ public class Music {
 
                 while (true) {
                     try {
-                        FileInputStream fileInputStream = new FileInputStream("Proiect2/Poze/01. Techno Syndrome (Mortal Kombat).mp3");
+                        FileInputStream fileInputStream = new FileInputStream("MortalKombat-main/Proiect2/Poze/01. Techno Syndrome (Mortal Kombat).mp3");
                         player = new Player(fileInputStream);
                         player.play();
                         if(!Elemente.play){
