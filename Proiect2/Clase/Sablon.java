@@ -9,7 +9,7 @@ public class Sablon extends JFrame implements ActionListener {
         GraphicsEnvironment.getLocalGraphicsEnvironment()
                 .getDefaultScreenDevice()
                 .setFullScreenWindow(this);
-        ImageIcon image = new ImageIcon("src/Proiect2/Poze/download.jpg");
+        ImageIcon image = new ImageIcon("MortalKombat-main/Proiect2/Poze/download.jpg");
         setIconImage(image.getImage());
         setTitle("MORTAL KOMBAT DUMBRAVIOARA EDITION");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
