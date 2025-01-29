@@ -19,7 +19,7 @@ public class Names extends Sablon implements ActionListener {
         name1 = Menu.configureTextFiled();
         name2 = Menu.configureTextFiled();
         name2.setForeground(Color.RED);
-        Elemente.panels[0]= Menu.colorare(new ImageIcon("MortalKombat-main/Proiect2/Poze/name.jpg").getImage());
+        Elemente.panels[0]= Menu.colorare(new ImageIcon("Proiect2/Poze/name.jpg").getImage());
         Elemente.labels[8].setForeground(new Color(0,200,255));
         Elemente.panels[0].setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
