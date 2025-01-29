@@ -13,7 +13,7 @@ public class Rules extends Sablon implements ActionListener {
 
    public Rules() {
         Menu.eliminaActionListeners(11, 11, this);
-        Image scroll = new ImageIcon("src/Proiect2/Poze/scroll.png").getImage();
+        Image scroll = new ImageIcon("Proiect2/Poze/scroll.png").getImage();
         Image scaledFoto = scroll.getScaledInstance(1100, 600, Image.SCALE_SMOOTH);
         Elemente.labels[13].setIcon(new ImageIcon(scaledFoto));
         Elemente.panels[0] = Menu.colorare(new ImageIcon("Proiect2/Poze/rules.jpg").getImage());
