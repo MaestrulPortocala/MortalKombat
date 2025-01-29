@@ -16,7 +16,7 @@ public class Rules extends Sablon implements ActionListener {
         Image scroll = new ImageIcon("src/Proiect2/Poze/scroll.png").getImage();
         Image scaledFoto = scroll.getScaledInstance(1100, 600, Image.SCALE_SMOOTH);
         Elemente.labels[13].setIcon(new ImageIcon(scaledFoto));
-        Elemente.panels[0] = Menu.colorare(new ImageIcon("MortalKombat-main/Proiect2/Poze/rules.jpg").getImage());
+        Elemente.panels[0] = Menu.colorare(new ImageIcon("Proiect2/Poze/rules.jpg").getImage());
         Elemente.panels[0].setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.VERTICAL;
