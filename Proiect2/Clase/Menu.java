@@ -38,8 +38,8 @@ public class Menu {
         JPanel backgroundPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon backGround = new ImageIcon(poza);
-                g.drawImage(backGround.getImage(), 0, 0, getWidth(), getHeight(), this);
+                g.drawImage(poza, 0, 0, getWidth(), getHeight(), this);
+
             }
         };
         return backgroundPanel;

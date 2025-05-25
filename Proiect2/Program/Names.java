@@ -1,9 +1,7 @@
 package Proiect2.Program;
 
-import Proiect2.Clase.Elemente;
+import Proiect2.Clase.*;
 import Proiect2.Clase.Menu;
-import Proiect2.Clase.Player;
-import Proiect2.Clase.Sablon;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,11 +13,12 @@ public class Names extends Sablon implements ActionListener {
     static public Player p2=new Player();
     JTextField name1, name2;
     Names() {
+
         Menu.eliminaActionListeners(4, 4, this);
         name1 = Menu.configureTextFiled();
         name2 = Menu.configureTextFiled();
         name2.setForeground(Color.RED);
-        Elemente.panels[0]= Menu.colorare(new ImageIcon("MortalKombat-main/Proiect2/Poze/name.jpg").getImage());
+        Elemente.panels[0]= Menu.colorare(new ImageIcon("Proiect2/Poze/name.jpg").getImage());
         Elemente.labels[8].setForeground(new Color(0,200,255));
         Elemente.panels[0].setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
@@ -48,8 +47,8 @@ public class Names extends Sablon implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 
-         Menu.back(e, Elemente.butoane[11], this);
-         if (e.getSource() == Elemente.butoane[4]) {
+        Menu.back(e, Elemente.butoane[11], this);
+        if (e.getSource() == Elemente.butoane[4]) {
             if(name1.getText().equals(name2.getText())){
                 JOptionPane.showMessageDialog(this, "Both players can't have the same name...", "Same name error...", JOptionPane.ERROR_MESSAGE);
             }
